@@ -57,6 +57,11 @@ bin/kafka-topics.sh --create --topic news --bootstrap-server localhost:9092
 ```
 🗣️ This command creates a Kafka topic called news that will be used by the producer to send messages.
 
+- To know about the topic
+```bash
+bin/kafka-topics.sh --describe --topic news --bootstrap-server localhost:9092
+```
+
 - With the topic created, start the Kafka producer to send messages to the `news` topic:
 
 ```bash
