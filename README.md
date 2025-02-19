@@ -47,6 +47,10 @@ bin/kafka-server-start.sh config/kraft/server.properties
 ```
 🚀 This starts Kafka in KRaft mode, and you'll see logs indicating that the server has started successfully.
 
+### To check cluster ID
+```bash
+cat /tmp/kraft-combined-logs/meta.properties
+```
 
 ### Create a Topic and Start Producer 📝
 
